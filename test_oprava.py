@@ -47,7 +47,7 @@ def test_course_details_display(page):
 
     course_title = page.locator("h2.title.has-display-lg-bold-font-size")
     course_description = page.locator("div.description p").filter(has_text="Nauč se klíčové dovednosti v oblasti datové analýzy").first
-    #course_description = course_title.locator(".. >> xpath=following-sibling::div[contains(@class, 'description')]//p")
+    
    
 
     assert course_title.is_visible(), "Course title is not visible."
